@@ -1,47 +1,56 @@
-body, html {
-  height: 100%;
-  margin: 0;
+body,
+html {
+   height: 100%;
+   margin: 0;
 }
 
 .container {
-  text-align: center;
-  height: 100%;
-  padding: 16px;
-  box-sizing: border-box;
+   display: grid;
+   grid-template-columns: 300px 1200px;
+   grid-template-rows: 100px 70px 600px 100px;
+   gap: 15px;
+   text-align: center;
+   height: 100%;
+   padding: 16px;
+   box-sizing: border-box;
 }
 
 .container div {
-  padding: 15px;
-  font-size: 32px;
-  font-family: Helvetica;
-  font-weight: bold;
-  color: white;
-  border-radius: 15px;
+   padding: 15px;
+   font-size: 32px;
+   font-family: Helvetica;
+   font-weight: bold;
+   color: white;
+   border-radius: 15px;
 }
 
 .header {
-  background-color: #FFDE22;
+   background-color: #ffde22;
+   grid-column: span 2;
 }
 
 .sidebar {
-  background-color: #FF7755;
+   background-color: #ff7755;
+   grid-row-start: 2;
+   grid-row-end: 4;
 }
 
 .nav {
-  background-color: #00DDFF;
+   background-color: #00ddff;
 }
 
 .article {
-  background-color: #bccbde;
+   background-color: #bccbde;
 }
 
 .article p {
-  font-size: 18px;
-  font-family: sans-serif;
-  color: white;
-  text-align: left;
+   font-size: 18px;
+   font-family: sans-serif;
+   color: white;
+   text-align: left;
 }
 
 .footer {
-  background-color: #393f4d;
+   background-color: #393f4d;
+   grid-column: span 2;
 }
